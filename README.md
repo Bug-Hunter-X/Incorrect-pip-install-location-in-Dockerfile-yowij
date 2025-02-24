@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Dockerfiles: placing `pip install` within the `CMD` instruction. This leads to issues because the installation happens during the container's execution phase rather than the build phase. The corrected `Dockerfile.fixed` shows the proper way to handle dependencies in Docker.
